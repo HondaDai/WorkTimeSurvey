@@ -206,6 +206,88 @@
                                 <input type="email" class="form-control" id="email" placeholder="有新消息時將通知您(選填)" >
                             </div>
                         </div>
+                        <div id="overtime_frequency_input" class="form-group">
+                            <label for="overtime_frequency" class="col-sm-2 control-label">有無加班費</label>
+                            <div id="overtime-freq-btn-group" class="col-xs-12 col-sm-10" data-toggle="buttons">
+                                <label class="btn btn-default btn-block">
+                                    <input type="radio" name="frequency" value="0" required><span class="emoji emoji-smile"></span>有，且優於或符合勞基法
+                                </label>
+                                <label class="btn btn-default btn-block">
+                                    <input type="radio" name="frequency" value="1" required><span class="emoji emoji-disappointed"></span>有，但不符合勞基法
+                                </label>
+                                <label class="btn btn-default btn-block">
+                                    <input type="radio" name="frequency" value="2" required><span class="emoji emoji-angry"></span>有，但不清楚合不合法
+                                </label>
+                                <label class="btn btn-default btn-block">
+                                    <input type="radio" name="frequency" value="3" required><span class="emoji emoji-screaming"></span>沒有加班費，但會以其他形式給予
+                                </label>
+                                <label class="btn btn-default btn-block">
+                                    <input type="radio" name="frequency" value="3" required><span class="emoji emoji-screaming"></span>完全沒有加班費
+                                </label>
+                                <label class="btn btn-default btn-block">
+                                    <input type="radio" name="frequency" value="3" required><span class="emoji emoji-screaming"></span>不知道有沒有加班費
+                                </label>
+                                <label class="btn btn-default btn-block">
+                                    <input type="radio" name="frequency" value="3" required><span class="emoji emoji-screaming"></span>我不想填
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <label for="has_overtime_salary" class="col-xs-3 col-sm-2 control-label">有無加班費</label>
+                                <div class="col-xs-9 col-sm-10">
+                                    <select name="has_overtime_salary" id="has_overtime_salary" class="form-control">
+                                        <option value="" disabled selected>選填</option>
+                                        <option value="yes_and_obey">有，且優於或符合勞基法</option>
+                                        <option value="yes_but_disobey">有，但不符合勞基法</option>
+                                        <option value="yes_but_dont_know">有，但不清楚合不合法</option>
+                                        <option value="no_but_has_complement">沒有加班費，但會以其他形式給予</option>
+                                        <option value="no">完全沒有加班費</option>
+                                        <option value="dont_know">不知道有沒有加班費</option>
+                                        <option value="">我不想填</option>
+                                    </select>
+                                </div>
+                            </div>
+                        <div class="form-group">
+                                <label for="has_overtime_salary" class="col-xs-3 col-sm-2 control-label">有無加班費</label>
+                                <div class="col-xs-9 col-sm-10">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">有，且優於或符合勞基法
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">有，但不符合勞基法
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">有，但不清楚合不合法
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">沒有加班費，但會以其他形式給予
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">完全沒有加班費
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">不知道有沒有加班費
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">我不想填
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
                         <div id="submit-alerts"></div>
                         <div class="text-center">
                             <a id="submit" class="btn btn-default btn-lg" data-logAction="click-submit"><span id="fb-login-word">以<i class="fa fa-facebook fa-fw"></i>驗證並</span>送出資料</a>
